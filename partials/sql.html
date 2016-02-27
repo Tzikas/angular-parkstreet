@@ -1,0 +1,23 @@
+<h4>simple web sql</h4>
+<br><br>
+
+<input placeholder="Type anything and click enter" type="text">
+<code id="insertSql" class="createTable">INSERT INTO LOGS (id, log) VALUES (id, str)</code>
+<code class="createTable">CREATE TABLE IF NOT EXISTS LOGS (id unique, log)</code>
+
+<br><br>
+
+<code>SELECT * FROM LOGS</code>
+<code id="status" name="status">Status Message</code>
+<br><br>
+<div class="sql">
+	<table border="1" width="100%">
+		<tr ng-repeat="x in logs " ng-class="{{x[0].id}}" ng-click="deleteLog(this.x[0].id)">
+			<td><span class="glyphicon glyphicon-remove" style="float:left"></span><p>{{x[1].log}}</p><code>DELETE FROM LOGS WHERE id=?', [id]</code><span class="glyphicon glyphicon-remove"></span></td>
+		</tr>
+	</table>
+</div>
+
+
+
+

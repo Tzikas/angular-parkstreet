@@ -1,0 +1,18 @@
+<h4>http - fetching external data from <a target="_blank" href="http://www.w3schools.com/angular/customers_mysql.php">W3</a></h4> 
+
+
+<!--<div ng-app="myApp" ng-controller="SqlCtrl">-->
+<table border="1" width="100%">
+	<tr>
+		<th><button ng-click="orderByMe('Name')">Name</button></th>
+		<th><button ng-click="orderByMe('City')">City</button></th>
+		<th><button ng-click="orderByMe('Country')">Country</button></th>
+
+	</tr>
+	<tr ng-repeat="x in records | orderBy:myOrderBy">
+		<td>{{x.Name}}</td>
+		<td>{{x.City}}</td>
+		<td>{{x.Country}}</td>
+	</tr>
+</table>
+
