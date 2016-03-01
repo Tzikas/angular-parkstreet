@@ -1,19 +1,3 @@
-"use strict";
-angular.module('AngStarter', ['ngRoute']);
-
-jQuery(document).ready(function($) {
-	$(".scroll").click(function(event){     
-		event.preventDefault();
-		$('html,body').animate({scrollTop:$(this.hash).offset().top - 350}, 500);
-	});
-});
-
-
-
-
-/*Art*/
-
-/**THUMBS Mo.js**/	
 /**
  * demo.js
  * http://www.codrops.com
@@ -93,7 +77,7 @@ jQuery(document).ready(function($) {
 	};
 
 	// grid items:
-	var items = [].slice.call(document.querySelectorAll('ul.grid > .grid__item'));
+	var items = [].slice.call(document.querySelectorAll('ol.grid > .grid__item'));
 
 	function init() {
 		/* Icon 1 */
@@ -418,7 +402,7 @@ jQuery(document).ready(function($) {
 		});
 		/* Icon 6 */
 
-		/* Icon 7 *
+		/* Icon 7 */
 		var el7 = items[6].querySelector('button.icobutton'), el7span = el7.querySelector('span');
 		new Animocon(el7, {
 			tweens : [
@@ -493,7 +477,7 @@ jQuery(document).ready(function($) {
 		});
 		/* Icon 7 */
 
-		/* Icon 8 *
+		/* Icon 8 */
 		var el8 = items[7].querySelector('button.icobutton'), el8span = el8.querySelector('span');
 		var scaleCurve8 = mojs.easing.path('M0,100 L25,99.9999983 C26.2328835,75.0708847 19.7847843,0 100,0');
 		new Animocon(el8, {
@@ -593,7 +577,7 @@ jQuery(document).ready(function($) {
 		});
 		/* Icon 8 */
 
-		/* Icon 9 *
+		/* Icon 9 */
 		var el9 = items[8].querySelector('button.icobutton'), el9span = el9.querySelector('span');
 		el9span.style.WebkitTransformOrigin = el9span.style.transformOrigin = '-10% 50%';
 		new Animocon(el9, {
@@ -686,7 +670,7 @@ jQuery(document).ready(function($) {
 		});
 		/* Icon 9 */
 
-		/* Icon 10 *
+		/* Icon 10 */
 		var el10 = items[9].querySelector('button.icobutton'), el10span = el10.querySelector('span'), el10counter = el10.querySelector('span.icobutton__text');
 		var opacityCurve10 = mojs.easing.path('M1,0 C1,0 26,100 51,100 C76,100 101,0 101,0');
 		var translationCurve10 = mojs.easing.path('M0,100 C0,0 50,0 50,0 L50,100 L50,200 C50,200 50,100 100,100');
@@ -743,7 +727,7 @@ jQuery(document).ready(function($) {
 		});
 		/* Icon 10 */
 
-		/* Icon 11 *
+		/* Icon 11 */
 		var el11 = items[10].querySelector('button.icobutton'), el11span = el11.querySelector('span');
 		var opacityCurve11 = mojs.easing.path('M0,0 C0,87 27,100 40,100 L40,0 L100,0');
 		var scaleCurve11 = mojs.easing.path('M0,0c0,80,39.2,100,39.2,100L40-100c0,0-0.7,106,60,106');
@@ -801,9 +785,9 @@ jQuery(document).ready(function($) {
 				el11.style.color = '#C0C1C3';	
 			}
 		});
-		/* Icon 11 *
+		/* Icon 11 */
 
-		/* Icon 12 * 
+		/* Icon 12 */ 
 		var el12 = items[11].querySelector('button.icobutton'), el12span = el12.querySelector('span');
 		var opacityCurve12 = mojs.easing.path('M0,100 L20,100 L20,1 L100,1');
 		var translationCurve12 = mojs.easing.path('M0,100h20V0c0,0,0.2,101,80,101');
@@ -891,7 +875,7 @@ jQuery(document).ready(function($) {
 		});
 		/* Icon 12 */
 
-		/* Icon 13 *
+		/* Icon 13 */
 		var el13 = items[12].querySelector('button.icobutton'), el13span = el13.querySelector('span');
 		new Animocon(el13, {
 			tweens : [
@@ -995,7 +979,7 @@ jQuery(document).ready(function($) {
 		});
 		/* Icon 13 */
 
-		/* Icon 14 *
+		/* Icon 14 */
 		var el14 = items[13].querySelector('button.icobutton'), el14span = el14.querySelector('span'), el14counter = el14.querySelector('span.icobutton__text');
 		new Animocon(el14, {
 			tweens : [
@@ -1143,7 +1127,7 @@ jQuery(document).ready(function($) {
 		});
 		/* Icon 14 */
 
-		/* Icon 15 *
+		/* Icon 15 */
 		var el15 = items[14].querySelector('button.icobutton'), el15span = el15.querySelector('span');
 		var opacityCurve15 = mojs.easing.path('M1,0 C1,0 26,100 51,100 C76,100 101,0 101,0');
 		var translationCurve15 = mojs.easing.path('M0,100 C0,0 50,0 50,0 L50,100 L50,200 C50,200 50,100 100,100');
@@ -1193,7 +1177,7 @@ jQuery(document).ready(function($) {
 		});
 		/* Icon 15 */
 
-		/* Icon 16 *
+		/* Icon 16 */
 		var el16 = items[15].querySelector('button.icobutton'), el16span = el16.querySelector('span');
 		var opacityCurve16 = mojs.easing.path('M0,0 L25.333,0 L75.333,100 L100,0');
 		var translationCurve16 = mojs.easing.path('M0,100h25.3c0,0,6.5-37.3,15-56c12.3-27,35-44,35-44v150c0,0-1.1-12.2,9.7-33.3c9.7-19,15-22.9,15-22.9');
@@ -1311,7 +1295,7 @@ jQuery(document).ready(function($) {
 		});
 		/* Icon 16 */
 
-		/* Icon 17 *
+		/* Icon 17 */
 		var el17 = items[16].querySelector('button.icobutton'), el17SVG = el17.querySelector('svg');
 		var translationCurve17 = mojs.easing.path('M0,100 C0,72 10,-0.1 50,0 C89.6,0.1 100,72 100,100');
 		new Animocon(el17, {
@@ -1450,7 +1434,7 @@ jQuery(document).ready(function($) {
 				el17SVG.style.fill = '#C0C1C3';
 			}
 		});
-		/* Icon 17 *
+		/* Icon 17 */
 		
 		// bursts when hovering the mo.js link
 		var molinkEl = document.querySelector('.special-link'),
@@ -1521,14 +1505,11 @@ jQuery(document).ready(function($) {
 			});
 
 		moTimeline.add(moburst1, moburst2, moburst3, moburst4, moburst5);
-		//molinkEl.addEventListener('click', function() {
-		//	moTimeline.start();
-		//});
-	*/
+		molinkEl.addEventListener('mouseenter', function() {
+			moTimeline.start();
+		});
 	}
+	
 	init();
 
 })(window);
-
-
-

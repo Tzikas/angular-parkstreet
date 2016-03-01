@@ -175,7 +175,7 @@ video{
 }
 
 a:focus{
-	color:green ;
+	//color:green ;
 }
 
 
@@ -236,12 +236,18 @@ a:hover{
 @media (max-width: 1080px){
 	#logo { 
 		display:none;
+		//padding: 0 15px;
+		
 	}
 }
 
 @media (max-width: 560px){
 	.navbar .main-nav-text { 
 		display:none;
+	}
+	.container {
+		width: 100% !important;
+		padding: 0 !important;
 	}
 	.email a{
 		float:left !important;
@@ -338,12 +344,6 @@ table tr:nth-child(even) {
 }
 
 
-button:hover{
-	background:lightblue !important;
-}
-
-
-
 .createTable {
 	opacity:0;
 	animation: fade;
@@ -363,20 +363,61 @@ button:hover{
 }
 
 	/***Art*/
+
+//**ART BUTTONS - THUMBS **/
 .art{
 	text-align:center;
+	//position: relative;
 }
 .art img{
-	width:75%;
+	width:100%;
+	
+	//position: relative;
+//	z-index: -1;
+//	margin-top:-50%;	
 
 }
-.blackKeys{
-	background: black;
-	height: 25px;
-	margin-top: -12px;
-	width: 70px;
-	z-index: 98;
-	position: absolute;
+.btn-thumb:hover, .btn-thumb:focus, .btn-thumb:active, .btn-thumb.active, .open .dropdown-toggle.btn-thumb {
+
+  background-color: transparent !important;
+  border-color: #31347B;
+ }
+
+.btn-thumb 
+{
+  background-color: transparent !important;
+  border-color: #9F418F;
+  //color: #ccc !important;
+}	
+
+
+
+.grid__item{
+	//height:700px;
+	text-align:center;
+	margin:5em;
+}
+
+.fa-thumbs-up:before{
+	position:absolute;
+	margin: 35%;
+	font-size: 4em;
+	visibility:hidden;
+}
+
+.fa-thumbs-up:hover:before{
+	visibility:visible;
+	
+}
+
+button.icobutton span{
+	//position:absolute;
+	//margin: 35% 45%;
+	//padding: 0;
+	//border: 1px solid red;
+} 
+
+.fa {
 }
 
 
